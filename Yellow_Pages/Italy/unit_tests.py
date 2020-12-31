@@ -7,8 +7,8 @@ import requests
 from bs4 import BeautifulSoup
 
 
-class UnitTestsDesktopAutomationYellowPagesCanada(unittest.TestCase):
-    def test_click_on_button_email_for_one_page_without_ocr_for_distributing_open_source_code_for_garage_in_italy(self):
+class UnitTestsDesktopAutomationYellowPagesItaly(unittest.TestCase):
+    def test_click_on_button_email_for_one_page_without_ocr_in_italy(self):
         url_company = "https://www.paginegialle.it/centro-revisioni-nais-roma"
 
         html_company = requests.get(url_company)
@@ -102,7 +102,7 @@ class UnitTestsDesktopAutomationYellowPagesCanada(unittest.TestCase):
         else:
             print("no button Contattaci")
 
-    def test_click_on_button_email_for_all_pages_without_ocr_for_distributing_open_source_hydrogen_technologies_for_garage_in_italy(self):
+    def test_click_on_button_email_for_all_pages_without_ocr_in_italy(self):
         try:
             activites = [
                 # {'id': '1', 'url': 'lavoro interinale'},
