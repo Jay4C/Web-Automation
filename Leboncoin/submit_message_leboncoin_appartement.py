@@ -4,8 +4,8 @@ id = sys.argv[1]
 votreNom = sys.argv[2]
 votreEmail = sys.argv[3]
 
-browser = webdriver.Firefox(executable_path = 'F:\2_P\2_E\B_E_C\1_E_ALOYAU\4_Activites\1_P_S\1_R_P_P\1_M_S\5_Mes_Codes\API_Rapacimmo\geckodriver.exe')
-browser.get('https://www.leboncoin.fr/ar/form/0?id=' + id)
+browser = webdriver.Firefox(executable_path = 'geckodriver.exe')
+browser.get('https://www.leboncoin.fr/ar?id=' + id)
 
 name = browser.find_element_by_xpath("//form[@id='adreply_form']/div[1]/div[1]/input[1]")
 email = browser.find_element_by_xpath("//form[@id='adreply_form']/div[2]/div[1]/input[1]")
