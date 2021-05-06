@@ -54,8 +54,8 @@ message.send_keys("Bonjour. Je suis un particulier. Je suis dans la region paris
                   "Cordialement, \n"+
 
                   "\n" +
-                  "Jason ALOYAU \n"+
-                  "Telephone : 0769038124")
+                  "Mr/Mme \n"+
+                  "Telephone : ")
 
 browser.find_element_by_xpath("//form[@id='adreply_form']").submit()
 browser.close()
