@@ -342,5 +342,786 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         browser.quit()
 
+    def test_generate_html_to_pdf_use_case_form(self):
+        print("test_generate_html_to_pdf_use_case_form")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('https://www.holomorphe.com/reporting/use_case_form')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill use_case_id
+        use_case_id = browser.find_element_by_name("use_case_id")
+        use_case_id.clear()
+        use_case_id.send_keys("use_case_id")
+
+        time.sleep(5)
+
+        # fill use_case
+        use_case = browser.find_element_by_name("use_case")
+        use_case.clear()
+        use_case.send_keys("use_case")
+
+        time.sleep(5)
+
+        # fill elaboration_phase
+        elaboration_phase = browser.find_element_by_name("elaboration_phase")
+        elaboration_phase.clear()
+        elaboration_phase.send_keys("elaboration_phase")
+
+        time.sleep(5)
+
+        # fill actors
+        actors = browser.find_element_by_name("actors")
+        actors.clear()
+        actors.send_keys("actors")
+
+        time.sleep(5)
+
+        # fill description
+        description = browser.find_element_by_name("description")
+        description.clear()
+        description.send_keys("description")
+
+        time.sleep(5)
+
+        # fill priority
+        priority = browser.find_element_by_name("priority")
+        priority.clear()
+        priority.send_keys("priority")
+
+        time.sleep(5)
+
+        # fill non_functional_requirements
+        non_functional_requirements = browser.find_element_by_name("non_functional_requirements")
+        non_functional_requirements.clear()
+        non_functional_requirements.send_keys("non_functional_requirements")
+
+        time.sleep(5)
+
+        # fill assumptions
+        assumptions = browser.find_element_by_name("assumptions")
+        assumptions.clear()
+        assumptions.send_keys("assumptions")
+
+        time.sleep(5)
+
+        # fill source
+        source = browser.find_element_by_name("source")
+        source.clear()
+        source.send_keys("source")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_use_case_form")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
+    def test_generate_html_to_pdf_kanban_board(self):
+        print("test_generate_html_to_pdf_kanban_board")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('https://www.holomorphe.com/reporting/kanban_board')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill backlog
+        backlog = browser.find_element_by_name("backlog")
+        backlog.clear()
+        backlog.send_keys("backlog")
+
+        time.sleep(5)
+
+        # fill to_do
+        to_do = browser.find_element_by_name("to_do")
+        to_do.clear()
+        to_do.send_keys("to_do")
+
+        time.sleep(5)
+
+        # fill in_progress
+        in_progress = browser.find_element_by_name("in_progress")
+        in_progress.clear()
+        in_progress.send_keys("in_progress")
+
+        time.sleep(5)
+
+        # fill done
+        done = browser.find_element_by_name("done")
+        done.clear()
+        done.send_keys("done")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_kanban_board")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
+    def test_generate_html_to_pdf_gap_analysis(self):
+        print("test_generate_html_to_pdf_gap_analysis")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('https://www.holomorphe.com/reporting/gap_analysis')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill category
+        category = browser.find_element_by_name("category")
+        category.clear()
+        category.send_keys("category")
+
+        time.sleep(5)
+
+        # fill current_state
+        current_state = browser.find_element_by_name("current_state")
+        current_state.clear()
+        current_state.send_keys("current_state")
+
+        time.sleep(5)
+
+        # fill goal_state
+        goal_state = browser.find_element_by_name("goal_state")
+        goal_state.clear()
+        goal_state.send_keys("goal_state")
+
+        time.sleep(5)
+
+        # fill gap
+        gap = browser.find_element_by_name("gap")
+        gap.clear()
+        gap.send_keys("gap")
+
+        time.sleep(5)
+
+        # fill action_plan
+        action_plan = browser.find_element_by_name("action_plan")
+        action_plan.clear()
+        action_plan.send_keys("action_plan")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_gap_analysis")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
+    def test_generate_html_to_pdf_job_analysis(self):
+        print("test_generate_html_to_pdf_job_analysis")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('https://www.holomorphe.com/reporting/job_analysis')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill title
+        title = browser.find_element_by_name("title")
+        title.clear()
+        title.send_keys("title")
+
+        time.sleep(5)
+
+        # fill position
+        position = browser.find_element_by_name("position")
+        position.clear()
+        position.send_keys("position")
+
+        time.sleep(5)
+
+        # fill supervisor
+        supervisor = browser.find_element_by_name("supervisor")
+        supervisor.clear()
+        supervisor.send_keys("supervisor")
+
+        time.sleep(5)
+
+        # fill employee
+        employee = browser.find_element_by_name("employee")
+        employee.clear()
+        employee.send_keys("employee")
+
+        time.sleep(5)
+
+        # fill frequent_major_duties
+        frequent_major_duties = browser.find_element_by_name("frequent_major_duties")
+        frequent_major_duties.clear()
+        frequent_major_duties.send_keys("frequent_major_duties")
+
+        time.sleep(5)
+
+        # fill infrequent_major_duties
+        infrequent_major_duties = browser.find_element_by_name("infrequent_major_duties")
+        infrequent_major_duties.clear()
+        infrequent_major_duties.send_keys("infrequent_major_duties")
+
+        time.sleep(5)
+
+        # fill essential_responsibilities
+        essential_responsibilities = browser.find_element_by_name("essential_responsibilities")
+        essential_responsibilities.clear()
+        essential_responsibilities.send_keys("essential_responsibilities")
+
+        time.sleep(5)
+
+        # fill non_essential_responsibilities
+        non_essential_responsibilities = browser.find_element_by_name("non_essential_responsibilities")
+        non_essential_responsibilities.clear()
+        non_essential_responsibilities.send_keys("non_essential_responsibilities")
+
+        time.sleep(5)
+
+        # fill school_type
+        school_type = browser.find_element_by_name("school_type")
+        school_type.clear()
+        school_type.send_keys("school_type")
+
+        time.sleep(5)
+
+        # fill degree
+        degree = browser.find_element_by_name("degree")
+        degree.clear()
+        degree.send_keys("degree")
+
+        time.sleep(5)
+
+        # fill classes
+        classes = browser.find_element_by_name("classes")
+        classes.clear()
+        classes.send_keys("classes")
+
+        time.sleep(5)
+
+        # fill workshops
+        workshops = browser.find_element_by_name("workshops")
+        workshops.clear()
+        workshops.send_keys("workshops")
+
+        time.sleep(5)
+
+        # fill technical_skills
+        technical_skills = browser.find_element_by_name("technical_skills")
+        technical_skills.clear()
+        technical_skills.send_keys("technical_skills")
+
+        time.sleep(5)
+
+        # fill tool_skills
+        tool_skills = browser.find_element_by_name("tool_skills")
+        tool_skills.clear()
+        tool_skills.send_keys("tool_skills")
+
+        time.sleep(5)
+
+        # fill equipment_skills
+        equipment_skills = browser.find_element_by_name("equipment_skills")
+        equipment_skills.clear()
+        equipment_skills.send_keys("equipment_skills")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_job_analysis")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
+    def test_generate_html_to_pdf_pricing_strategy(self):
+        print("test_generate_html_to_pdf_pricing_strategy")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('https://www.holomorphe.com/reporting/pricing_strategy')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill item_cost
+        item_cost = browser.find_element_by_name("item_cost")
+        item_cost.clear()
+        item_cost.send_keys("item_cost")
+
+        time.sleep(5)
+
+        # fill labor
+        labor = browser.find_element_by_name("labor")
+        labor.clear()
+        labor.send_keys("labor")
+
+        time.sleep(5)
+
+        # fill materials
+        materials = browser.find_element_by_name("materials")
+        materials.clear()
+        materials.send_keys("materials")
+
+        time.sleep(5)
+
+        # fill utilities
+        utilities = browser.find_element_by_name("utilities")
+        utilities.clear()
+        utilities.send_keys("utilities")
+
+        time.sleep(5)
+
+        # fill equipment_depreciation
+        equipment_depreciation = browser.find_element_by_name("equipment_depreciation")
+        equipment_depreciation.clear()
+        equipment_depreciation.send_keys("equipment_depreciation")
+
+        time.sleep(5)
+
+        # fill advertising
+        advertising = browser.find_element_by_name("advertising")
+        advertising.clear()
+        advertising.send_keys("advertising")
+
+        time.sleep(5)
+
+        # fill packaging
+        packaging = browser.find_element_by_name("packaging")
+        packaging.clear()
+        packaging.send_keys("packaging")
+
+        time.sleep(5)
+
+        # fill insurance
+        insurance = browser.find_element_by_name("insurance")
+        insurance.clear()
+        insurance.send_keys("insurance")
+
+        time.sleep(5)
+
+        # fill postage
+        postage = browser.find_element_by_name("postage")
+        postage.clear()
+        postage.send_keys("postage")
+
+        time.sleep(5)
+
+        # fill wholesale_total
+        wholesale_total = browser.find_element_by_name("wholesale_total")
+        wholesale_total.clear()
+        wholesale_total.send_keys("wholesale_total")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_pricing_strategy")
+        submit.click()
+
+        time.sleep(20)
+
+        browser.quit()
+
 if __name__ == '__main__':
     unittest.main()
