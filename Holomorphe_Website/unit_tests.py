@@ -5,6 +5,131 @@ from selenium import webdriver
 
 
 class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
+    def test_generate_html_to_pdf_swot_analysis(self):
+        print("test_generate_html_to_pdf_swot_analysis")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('http://127.0.0.1:8000/reporting/swot_analysis')
+        # browser.get('https://holomorphe.com/reporting/swot_analysis')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill good_internal_strengths
+        good_internal_strengths = browser.find_element_by_name("good_internal_strengths")
+        good_internal_strengths.clear()
+        good_internal_strengths.send_keys("good_internal_strengths")
+
+        time.sleep(5)
+
+        # fill bad_internal_weaknesses
+        bad_internal_weaknesses = browser.find_element_by_name("bad_internal_weaknesses")
+        bad_internal_weaknesses.clear()
+        bad_internal_weaknesses.send_keys("bad_internal_weaknesses")
+
+        time.sleep(5)
+
+        # fill external_opportunities
+        external_opportunities = browser.find_element_by_name("external_opportunities")
+        external_opportunities.clear()
+        external_opportunities.send_keys("external_opportunities")
+
+        time.sleep(5)
+
+        # fill external_threats
+        external_threats = browser.find_element_by_name("external_threats")
+        external_threats.clear()
+        external_threats.send_keys("external_threats")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_swot_analysis")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
     def test_generate_html_to_pdf_operational_plan(self):
         print("test_generate_html_to_pdf_operational_plan")
 
