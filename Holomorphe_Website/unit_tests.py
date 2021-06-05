@@ -5,6 +5,194 @@ from selenium import webdriver
 
 
 class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
+    def test_generate_html_to_pdf_operational_plan(self):
+        print("test_generate_html_to_pdf_operational_plan")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('http://127.0.0.1:8000/reporting/operational_plan')
+        # browser.get('https://holomorphe.com/reporting/operational_plan')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill goals
+        goals = browser.find_element_by_name("goals")
+        goals.clear()
+        goals.send_keys("goals")
+
+        time.sleep(5)
+
+        # fill strategy
+        strategy = browser.find_element_by_name("strategy")
+        strategy.clear()
+        strategy.send_keys("strategy")
+
+        time.sleep(5)
+
+        # fill program_activity
+        program_activity = browser.find_element_by_name("program_activity")
+        program_activity.clear()
+        program_activity.send_keys("program_activity")
+
+        time.sleep(5)
+
+        # fill start_time_frame
+        start_time_frame = browser.find_element_by_name("start_time_frame")
+        start_time_frame.clear()
+        start_time_frame.send_keys("start_time_frame")
+
+        time.sleep(5)
+
+        # fill end_time_frame
+        end_time_frame = browser.find_element_by_name("end_time_frame")
+        end_time_frame.clear()
+        end_time_frame.send_keys("end_time_frame")
+
+        time.sleep(5)
+
+        # fill teams
+        teams = browser.find_element_by_name("teams")
+        teams.clear()
+        teams.send_keys("teams")
+
+        time.sleep(5)
+
+        # fill internal_partners
+        internal_partners = browser.find_element_by_name("internal_partners")
+        internal_partners.clear()
+        internal_partners.send_keys("internal_partners")
+
+        time.sleep(5)
+
+        # fill external_partners
+        external_partners = browser.find_element_by_name("external_partners")
+        external_partners.clear()
+        external_partners.send_keys("external_partners")
+
+        time.sleep(5)
+
+        # fill required_resources
+        required_resources = browser.find_element_by_name("required_resources")
+        required_resources.clear()
+        required_resources.send_keys("required_resources")
+
+        time.sleep(5)
+
+        # fill actual_resources
+        actual_resources = browser.find_element_by_name("actual_resources")
+        actual_resources.clear()
+        actual_resources.send_keys("actual_resources")
+
+        time.sleep(5)
+
+        # fill targets
+        targets = browser.find_element_by_name("targets")
+        targets.clear()
+        targets.send_keys("targets")
+
+        time.sleep(5)
+
+        # fill immediate_impact
+        immediate_impact = browser.find_element_by_name("immediate_impact")
+        immediate_impact.clear()
+        immediate_impact.send_keys("immediate_impact")
+
+        time.sleep(5)
+
+        # fill data_sources
+        data_sources = browser.find_element_by_name("data_sources")
+        data_sources.clear()
+        data_sources.send_keys("data_sources")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_operational_plan")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
     def test_generate_html_to_pdf_competitor_worksheet(self):
         print("test_generate_html_to_pdf_competitor_worksheet")
 
