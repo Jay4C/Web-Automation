@@ -5,6 +5,144 @@ from selenium import webdriver
 
 
 class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
+    def test_generate_html_to_pdf_value_proposition_canvas(self):
+        print("test_generate_html_to_pdf_value_proposition_canvas")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('https://holomorphe.com/reporting/value_proposition_canvas')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill gain_creators
+        gain_creators = browser.find_element_by_name("gain_creators")
+        gain_creators.clear()
+        gain_creators.send_keys("gain_creators")
+
+        time.sleep(5)
+
+        # fill pain_relievers
+        pain_relievers = browser.find_element_by_name("pain_relievers")
+        pain_relievers.clear()
+        pain_relievers.send_keys("pain_relievers")
+
+        time.sleep(5)
+
+        # fill product_and_services
+        product_and_services = browser.find_element_by_name("product_and_services")
+        product_and_services.clear()
+        product_and_services.send_keys("product_and_services")
+
+        time.sleep(5)
+
+        # fill gains
+        gains = browser.find_element_by_name("gains")
+        gains.clear()
+        gains.send_keys("gains")
+
+        time.sleep(5)
+
+        # fill pains
+        pains = browser.find_element_by_name("pains")
+        pains.clear()
+        pains.send_keys("pains")
+
+        time.sleep(5)
+
+        # fill customer_jobs
+        customer_jobs = browser.find_element_by_name("customer_jobs")
+        customer_jobs.clear()
+        customer_jobs.send_keys("customer_jobs")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_value_proposition_canvas")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
     def test_generate_html_to_pdf_business_model_canvas(self):
         print("test_generate_html_to_pdf_business_model_canvas")
 
