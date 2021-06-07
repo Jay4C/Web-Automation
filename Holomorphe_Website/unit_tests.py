@@ -5,6 +5,201 @@ from selenium import webdriver
 
 
 class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
+    def test_generate_html_to_pdf_product_service_worksheet(self):
+        print("test_generate_html_to_pdf_product_service_worksheet")
+
+        time.sleep(5)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(5)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(5)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(5)
+
+        # open the report
+        browser.get('http://127.0.0.1:8000/reporting/product_service_worksheet')
+        # browser.get('https://holomorphe.com/reporting/product_service_worksheet')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(5)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(5)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(5)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(5)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(5)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(5)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(5)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(5)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(5)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(5)
+
+        # fill product_or_service
+        product_or_service = browser.find_element_by_name("product_or_service")
+        product_or_service.clear()
+        product_or_service.send_keys("product_or_service")
+
+        time.sleep(5)
+
+        # fill description
+        description = browser.find_element_by_name("description")
+        description.clear()
+        description.send_keys("description")
+
+        time.sleep(5)
+
+        # fill marketing_period_or_season
+        marketing_period_or_season = browser.find_element_by_name("marketing_period_or_season")
+        marketing_period_or_season.clear()
+        marketing_period_or_season.send_keys("marketing_period_or_season")
+
+        time.sleep(5)
+
+        # fill target_demographic
+        target_demographic = browser.find_element_by_name("target_demographic")
+        target_demographic.clear()
+        target_demographic.send_keys("target_demographic")
+
+        time.sleep(5)
+
+        # fill materials
+        materials = browser.find_element_by_name("materials")
+        materials.clear()
+        materials.send_keys("materials")
+
+        time.sleep(5)
+
+        # fill productions_steps
+        productions_steps = browser.find_element_by_name("productions_steps")
+        productions_steps.clear()
+        productions_steps.send_keys("productions_steps")
+
+        time.sleep(5)
+
+        # fill variations
+        variations = browser.find_element_by_name("variations")
+        variations.clear()
+        variations.send_keys("variations")
+
+        time.sleep(5)
+
+        # fill quality
+        quality = browser.find_element_by_name("quality")
+        quality.clear()
+        quality.send_keys("quality")
+
+        time.sleep(5)
+
+        # fill cost
+        cost = browser.find_element_by_name("cost")
+        cost.clear()
+        cost.send_keys("cost")
+
+        time.sleep(5)
+
+        # fill price
+        price = browser.find_element_by_name("price")
+        price.clear()
+        price.send_keys("price")
+
+        time.sleep(5)
+
+        # fill instructions
+        instructions = browser.find_element_by_name("instructions")
+        instructions.clear()
+        instructions.send_keys("instructions")
+
+        time.sleep(5)
+
+        # fill packaging
+        packaging = browser.find_element_by_name("packaging")
+        packaging.clear()
+        packaging.send_keys("packaging")
+
+        time.sleep(5)
+
+        # fill shipment
+        shipment = browser.find_element_by_name("shipment")
+        shipment.clear()
+        shipment.send_keys("shipment")
+
+        time.sleep(5)
+
+        # fill staff_required
+        staff_required = browser.find_element_by_name("staff_required")
+        staff_required.clear()
+        staff_required.send_keys("staff_required")
+
+        time.sleep(5)
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_product_service_worksheet")
+        submit.click()
+
+        time.sleep(10)
+
+        browser.quit()
+
     def test_generate_html_to_pdf_target_market_worksheet(self):
         print("test_generate_html_to_pdf_target_market_worksheet")
 
