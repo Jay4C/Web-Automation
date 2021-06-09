@@ -25,8 +25,8 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         time.sleep(1)
 
         # open the report
-        browser.get('http://127.0.0.1:8000/reporting/management_plan')
-        # browser.get('https://holomorphe.com/reporting/management_plan')
+        # browser.get('http://127.0.0.1:8000/reporting/management_plan')
+        browser.get('https://holomorphe.com/reporting/management_plan')
 
         time.sleep(5)
 
