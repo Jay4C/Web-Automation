@@ -25,8 +25,8 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         time.sleep(1)
 
         # open the report
-        browser.get('http://127.0.0.1:8000/reporting/quarterly_budget')
-        # browser.get('https://holomorphe.com/reporting/quarterly_budget')
+        # browser.get('http://127.0.0.1:8000/reporting/quarterly_budget')
+        browser.get('https://holomorphe.com/reporting/quarterly_budget')
 
         time.sleep(5)
 
