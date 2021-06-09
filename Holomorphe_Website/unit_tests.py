@@ -164,27 +164,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         time.sleep(1)
 
-        # fill r1c11
-        r1c11 = browser.find_element_by_name("r1c11")
-        r1c11.clear()
-        r1c11.send_keys("r1c11")
-
-        time.sleep(1)
-
-        # fill r1c12
-        r1c12 = browser.find_element_by_name("r1c12")
-        r1c12.clear()
-        r1c12.send_keys("r1c12")
-
-        time.sleep(1)
-
-        # fill r1c13
-        r1c13 = browser.find_element_by_name("r1c13")
-        r1c13.clear()
-        r1c13.send_keys("r1c13")
-
-        time.sleep(1)
-
         # fill r2c1
         r2c1 = browser.find_element_by_name("r2c1")
         r2c1.clear()
@@ -252,27 +231,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         r2c10 = browser.find_element_by_name("r2c10")
         r2c10.clear()
         r2c10.send_keys("r2c10")
-
-        time.sleep(1)
-
-        # fill r2c11
-        r2c11 = browser.find_element_by_name("r2c11")
-        r2c11.clear()
-        r2c11.send_keys("r2c11")
-
-        time.sleep(1)
-
-        # fill r2c12
-        r2c12 = browser.find_element_by_name("r2c12")
-        r2c12.clear()
-        r2c12.send_keys("r2c12")
-
-        time.sleep(1)
-
-        # fill r2c13
-        r2c13 = browser.find_element_by_name("r2c13")
-        r2c13.clear()
-        r2c13.send_keys("r2c13")
 
         time.sleep(1)
 
@@ -346,27 +304,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         time.sleep(1)
 
-        # fill r3c11
-        r3c11 = browser.find_element_by_name("r3c11")
-        r3c11.clear()
-        r3c11.send_keys("r3c11")
-
-        time.sleep(1)
-
-        # fill r3c12
-        r3c12 = browser.find_element_by_name("r3c12")
-        r3c12.clear()
-        r3c12.send_keys("r3c12")
-
-        time.sleep(1)
-
-        # fill r3c13
-        r3c13 = browser.find_element_by_name("r3c13")
-        r3c13.clear()
-        r3c13.send_keys("r3c13")
-
-        time.sleep(1)
-
         # fill r4c1
         r4c1 = browser.find_element_by_name("r4c1")
         r4c1.clear()
@@ -434,27 +371,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         r4c10 = browser.find_element_by_name("r4c10")
         r4c10.clear()
         r4c10.send_keys("r4c10")
-
-        time.sleep(1)
-
-        # fill r4c11
-        r4c11 = browser.find_element_by_name("r4c11")
-        r4c11.clear()
-        r4c11.send_keys("r4c11")
-
-        time.sleep(1)
-
-        # fill r4c12
-        r4c12 = browser.find_element_by_name("r4c12")
-        r4c12.clear()
-        r4c12.send_keys("r4c12")
-
-        time.sleep(1)
-
-        # fill r4c13
-        r4c13 = browser.find_element_by_name("r4c13")
-        r4c13.clear()
-        r4c13.send_keys("r4c13")
 
         time.sleep(1)
 
@@ -528,27 +444,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         time.sleep(1)
 
-        # fill r5c11
-        r5c11 = browser.find_element_by_name("r5c11")
-        r5c11.clear()
-        r5c11.send_keys("r5c11")
-
-        time.sleep(1)
-
-        # fill r5c12
-        r5c12 = browser.find_element_by_name("r5c12")
-        r5c12.clear()
-        r5c12.send_keys("r5c12")
-
-        time.sleep(1)
-
-        # fill r5c13
-        r5c13 = browser.find_element_by_name("r5c13")
-        r5c13.clear()
-        r5c13.send_keys("r5c13")
-
-        time.sleep(1)
-
         # fill r6c1
         r6c1 = browser.find_element_by_name("r6c1")
         r6c1.clear()
@@ -616,27 +511,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         r6c10 = browser.find_element_by_name("r6c10")
         r6c10.clear()
         r6c10.send_keys("r6c10")
-
-        time.sleep(1)
-
-        # fill r6c11
-        r6c11 = browser.find_element_by_name("r6c11")
-        r6c11.clear()
-        r6c11.send_keys("r6c11")
-
-        time.sleep(1)
-
-        # fill r6c12
-        r6c12 = browser.find_element_by_name("r6c12")
-        r6c12.clear()
-        r6c12.send_keys("r6c12")
-
-        time.sleep(1)
-
-        # fill r6c13
-        r6c13 = browser.find_element_by_name("r6c13")
-        r6c13.clear()
-        r6c13.send_keys("r6c13")
 
         time.sleep(1)
 
@@ -710,27 +584,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         time.sleep(1)
 
-        # fill r7c11
-        r7c11 = browser.find_element_by_name("r7c11")
-        r7c11.clear()
-        r7c11.send_keys("r7c11")
-
-        time.sleep(1)
-
-        # fill r7c12
-        r7c12 = browser.find_element_by_name("r7c12")
-        r7c12.clear()
-        r7c12.send_keys("r7c12")
-
-        time.sleep(1)
-
-        # fill r7c13
-        r7c13 = browser.find_element_by_name("r7c13")
-        r7c13.clear()
-        r7c13.send_keys("r7c13")
-
-        time.sleep(1)
-
         # fill r8c1
         r8c1 = browser.find_element_by_name("r8c1")
         r8c1.clear()
@@ -798,27 +651,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         r8c10 = browser.find_element_by_name("r8c10")
         r8c10.clear()
         r8c10.send_keys("r8c10")
-
-        time.sleep(1)
-
-        # fill r8c11
-        r8c11 = browser.find_element_by_name("r8c11")
-        r8c11.clear()
-        r8c11.send_keys("r8c11")
-
-        time.sleep(1)
-
-        # fill r8c12
-        r8c12 = browser.find_element_by_name("r8c12")
-        r8c12.clear()
-        r8c12.send_keys("r8c12")
-
-        time.sleep(1)
-
-        # fill r8c13
-        r8c13 = browser.find_element_by_name("r8c13")
-        r8c13.clear()
-        r8c13.send_keys("r8c13")
 
         time.sleep(1)
 
@@ -892,27 +724,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         time.sleep(1)
 
-        # fill r9c11
-        r9c11 = browser.find_element_by_name("r9c11")
-        r9c11.clear()
-        r9c11.send_keys("r9c11")
-
-        time.sleep(1)
-
-        # fill r9c12
-        r9c12 = browser.find_element_by_name("r9c12")
-        r9c12.clear()
-        r9c12.send_keys("r9c12")
-
-        time.sleep(1)
-
-        # fill r9c13
-        r9c13 = browser.find_element_by_name("r9c13")
-        r9c13.clear()
-        r9c13.send_keys("r9c13")
-
-        time.sleep(1)
-
         # fill r10c1
         r10c1 = browser.find_element_by_name("r10c1")
         r10c1.clear()
@@ -983,27 +794,6 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         time.sleep(1)
 
-        # fill r10c11
-        r10c11 = browser.find_element_by_name("r10c11")
-        r10c11.clear()
-        r10c11.send_keys("r10c11")
-
-        time.sleep(1)
-
-        # fill r10c12
-        r10c12 = browser.find_element_by_name("r10c12")
-        r10c12.clear()
-        r10c12.send_keys("r10c12")
-
-        time.sleep(1)
-
-        # fill r10c13
-        r10c13 = browser.find_element_by_name("r10c13")
-        r10c13.clear()
-        r10c13.send_keys("r10c13")
-
-        time.sleep(1)
-
         # submit
         submit = browser.find_element_by_name("button_generate_html_to_pdf_vendor_service_pricing_sheet")
         submit.click()
@@ -1011,7 +801,7 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
         time.sleep(5)
 
         browser.quit()
-
+    
     def test_generate_html_to_pdf_management_plan(self):
         print("test_generate_html_to_pdf_management_plan")
 
