@@ -32279,6 +32279,182 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         browser.quit()
 
+    def test_generate_html_to_pdf_sources_and_uses_of_funds(self):
+        print("test_generate_html_to_pdf_sources_and_uses_of_funds")
+
+        time.sleep(1)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(1)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(1)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(1)
+
+        # open the report
+        browser.get('https://holomorphe.com/reporting/sources_and_uses_of_funds')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(1)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(1)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(1)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(1)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(1)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(1)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(1)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(1)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(1)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(1)
+
+        # fill r1c1
+        r1c1 = browser.find_element_by_name("r1c1")
+        r1c1.clear()
+        r1c1.send_keys("r1c1")
+
+        # fill r1c2
+        r1c2 = browser.find_element_by_name("r1c2")
+        r1c2.clear()
+        r1c2.send_keys("r1c2")
+
+        # fill r1c3
+        r1c3 = browser.find_element_by_name("r1c3")
+        r1c3.clear()
+        r1c3.send_keys("r1c3")
+
+        # fill r1c4
+        r1c4 = browser.find_element_by_name("r1c4")
+        r1c4.clear()
+        r1c4.send_keys("r1c4")
+
+        # fill r1c5
+        r1c5 = browser.find_element_by_name("r1c5")
+        r1c5.clear()
+        r1c5.send_keys("r1c5")
+
+        # fill r1c6
+        r1c6 = browser.find_element_by_name("r1c6")
+        r1c6.clear()
+        r1c6.send_keys("r1c6")
+
+        # fill r1c7
+        r1c7 = browser.find_element_by_name("r1c7")
+        r1c7.clear()
+        r1c7.send_keys("r1c7")
+
+        # fill r1c8
+        r1c8 = browser.find_element_by_name("r1c8")
+        r1c8.clear()
+        r1c8.send_keys("r1c8")
+
+        # fill r1c9
+        r1c9 = browser.find_element_by_name("r1c9")
+        r1c9.clear()
+        r1c9.send_keys("r1c9")
+
+        # fill r1c10
+        r1c10 = browser.find_element_by_name("r1c10")
+        r1c10.clear()
+        r1c10.send_keys("r1c10")
+
+        # fill r1c11
+        r1c11 = browser.find_element_by_name("r1c11")
+        r1c11.clear()
+        r1c11.send_keys("r1c11")
+
+        # fill r1c12
+        r1c12 = browser.find_element_by_name("r1c12")
+        r1c12.clear()
+        r1c12.send_keys("r1c12")
+
+        # fill r1c13
+        r1c13 = browser.find_element_by_name("r1c13")
+        r1c13.clear()
+        r1c13.send_keys("r1c13")
+
+        # fill r1c14
+        r1c14 = browser.find_element_by_name("r1c14")
+        r1c14.clear()
+        r1c14.send_keys("r1c14")
+
+        # fill r1c15
+        r1c15 = browser.find_element_by_name("r1c15")
+        r1c15.clear()
+        r1c15.send_keys("r1c15")
+
+        # fill r1c16
+        r1c16 = browser.find_element_by_name("r1c16")
+        r1c16.clear()
+        r1c16.send_keys("r1c16")
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_sources_and_uses_of_funds")
+        submit.click()
+
+        time.sleep(5)
+
+        browser.quit()
+
 
 if __name__ == '__main__':
     unittest.main()
