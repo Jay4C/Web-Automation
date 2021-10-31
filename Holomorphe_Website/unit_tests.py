@@ -33348,6 +33348,1542 @@ class UnitTestsWebAutomationHolomorpheWebsite(unittest.TestCase):
 
         browser.quit()
 
+    def test_generate_html_to_pdf_promotions_calendar(self):
+        print("test_generate_html_to_pdf_promotions_calendar")
+
+        time.sleep(1)
+
+        warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
+
+        time.sleep(1)
+
+        # with Firefox
+        browser = webdriver.Firefox(executable_path='geckodriver.exe')
+
+        time.sleep(1)
+
+        # maximize window
+        browser.maximize_window()
+
+        time.sleep(1)
+
+        # open the report
+        browser.get('https://holomorphe.com/reporting/promotions_calendar')
+
+        time.sleep(5)
+
+        # fill company name
+        company_name = browser.find_element_by_name("company_name")
+        company_name.clear()
+        company_name.send_keys("company_name")
+
+        time.sleep(1)
+
+        # fill share_capital
+        share_capital = browser.find_element_by_name("share_capital")
+        share_capital.clear()
+        share_capital.send_keys("share_capital")
+        time.sleep(1)
+
+        # fill head_office_address
+        head_office_address = browser.find_element_by_name("head_office_address")
+        head_office_address.clear()
+        head_office_address.send_keys("head_office_address")
+
+        time.sleep(1)
+
+        # fill establishment_number
+        establishment_number = browser.find_element_by_name("establishment_number")
+        establishment_number.clear()
+        establishment_number.send_keys("establishment_number")
+
+        time.sleep(1)
+
+        # fill register_of_trade_and_companies
+        register_of_trade_and_companies = browser.find_element_by_name("register_of_trade_and_companies")
+        register_of_trade_and_companies.clear()
+        register_of_trade_and_companies.send_keys("register_of_trade_and_companies")
+        time.sleep(1)
+
+        # fill main_activities
+        main_activities = browser.find_element_by_name("main_activities")
+        main_activities.clear()
+        main_activities.send_keys("main_activities")
+        time.sleep(1)
+
+        # fill activity_number
+        activity_number = browser.find_element_by_name("activity_number")
+        activity_number.clear()
+        activity_number.send_keys("activity_number")
+
+        time.sleep(1)
+
+        # fill intra_community_vat_number
+        intra_community_vat_number = browser.find_element_by_name("intra_community_vat_number")
+        intra_community_vat_number.clear()
+        intra_community_vat_number.send_keys("intra_community_vat_number")
+        time.sleep(1)
+
+        # fill president
+        president = browser.find_element_by_name("president")
+        president.clear()
+        president.send_keys("president")
+        time.sleep(1)
+
+        # fill registration_date
+        registration_date = browser.find_element_by_name("registration_date")
+        registration_date.clear()
+        registration_date.send_keys("registration_date")
+        time.sleep(1)
+
+        # fill r1c1
+        r1c1 = browser.find_element_by_name("r1c1")
+        r1c1.clear()
+        r1c1.send_keys("r1c1")
+
+        # fill r1c2
+        r1c2 = browser.find_element_by_name("r1c2")
+        r1c2.clear()
+        r1c2.send_keys("r1c2")
+
+        # fill r1c3
+        r1c3 = browser.find_element_by_name("r1c3")
+        r1c3.clear()
+        r1c3.send_keys("r1c3")
+
+        # fill r1c4
+        r1c4 = browser.find_element_by_name("r1c4")
+        r1c4.clear()
+        r1c4.send_keys("r1c4")
+
+        # fill r1c5
+        r1c5 = browser.find_element_by_name("r1c5")
+        r1c5.clear()
+        r1c5.send_keys("r1c5")
+
+        # fill r1c6
+        r1c6 = browser.find_element_by_name("r1c6")
+        r1c6.clear()
+        r1c6.send_keys("r1c6")
+
+        # fill r1c7
+        r1c7 = browser.find_element_by_name("r1c7")
+        r1c7.clear()
+        r1c7.send_keys("r1c7")
+
+        # fill r1c8
+        r1c8 = browser.find_element_by_name("r1c8")
+        r1c8.clear()
+        r1c8.send_keys("r1c8")
+
+        # fill r1c9
+        r1c9 = browser.find_element_by_name("r1c9")
+        r1c9.clear()
+        r1c9.send_keys("r1c9")
+
+        # fill r1c10
+        r1c10 = browser.find_element_by_name("r1c10")
+        r1c10.clear()
+        r1c10.send_keys("r1c10")
+
+        # fill r1c11
+        r1c11 = browser.find_element_by_name("r1c11")
+        r1c11.clear()
+        r1c11.send_keys("r1c11")
+
+        # fill r1c12
+        r1c12 = browser.find_element_by_name("r1c12")
+        r1c12.clear()
+        r1c12.send_keys("r1c12")
+
+        # fill r2c1
+        r2c1 = browser.find_element_by_name("r2c1")
+        r2c1.clear()
+        r2c1.send_keys("r2c1")
+
+        # fill r2c2
+        r2c2 = browser.find_element_by_name("r2c2")
+        r2c2.clear()
+        r2c2.send_keys("r2c2")
+
+        # fill r2c3
+        r2c3 = browser.find_element_by_name("r2c3")
+        r2c3.clear()
+        r2c3.send_keys("r2c3")
+
+        # fill r2c4
+        r2c4 = browser.find_element_by_name("r2c4")
+        r2c4.clear()
+        r2c4.send_keys("r2c4")
+
+        # fill r2c5
+        r2c5 = browser.find_element_by_name("r2c5")
+        r2c5.clear()
+        r2c5.send_keys("r2c5")
+
+        # fill r2c6
+        r2c6 = browser.find_element_by_name("r2c6")
+        r2c6.clear()
+        r2c6.send_keys("r2c6")
+
+        # fill r2c7
+        r2c7 = browser.find_element_by_name("r2c7")
+        r2c7.clear()
+        r2c7.send_keys("r2c7")
+
+        # fill r2c8
+        r2c8 = browser.find_element_by_name("r2c8")
+        r2c8.clear()
+        r2c8.send_keys("r2c8")
+
+        # fill r2c9
+        r2c9 = browser.find_element_by_name("r2c9")
+        r2c9.clear()
+        r2c9.send_keys("r2c9")
+
+        # fill r2c10
+        r2c10 = browser.find_element_by_name("r2c10")
+        r2c10.clear()
+        r2c10.send_keys("r2c10")
+
+        # fill r2c11
+        r2c11 = browser.find_element_by_name("r2c11")
+        r2c11.clear()
+        r2c11.send_keys("r2c11")
+
+        # fill r2c12
+        r2c12 = browser.find_element_by_name("r2c12")
+        r2c12.clear()
+        r2c12.send_keys("r2c12")
+
+        # fill r3c1
+        r3c1 = browser.find_element_by_name("r3c1")
+        r3c1.clear()
+        r3c1.send_keys("r3c1")
+
+        # fill r3c2
+        r3c2 = browser.find_element_by_name("r3c2")
+        r3c2.clear()
+        r3c2.send_keys("r3c2")
+
+        # fill r3c3
+        r3c3 = browser.find_element_by_name("r3c3")
+        r3c3.clear()
+        r3c3.send_keys("r3c3")
+
+        # fill r3c4
+        r3c4 = browser.find_element_by_name("r3c4")
+        r3c4.clear()
+        r3c4.send_keys("r3c4")
+
+        # fill r3c5
+        r3c5 = browser.find_element_by_name("r3c5")
+        r3c5.clear()
+        r3c5.send_keys("r3c5")
+
+        # fill r3c6
+        r3c6 = browser.find_element_by_name("r3c6")
+        r3c6.clear()
+        r3c6.send_keys("r3c6")
+
+        # fill r3c7
+        r3c7 = browser.find_element_by_name("r3c7")
+        r3c7.clear()
+        r3c7.send_keys("r3c7")
+
+        # fill r3c8
+        r3c8 = browser.find_element_by_name("r3c8")
+        r3c8.clear()
+        r3c8.send_keys("r3c8")
+
+        # fill r3c9
+        r3c9 = browser.find_element_by_name("r3c9")
+        r3c9.clear()
+        r3c9.send_keys("r3c9")
+
+        # fill r3c10
+        r3c10 = browser.find_element_by_name("r3c10")
+        r3c10.clear()
+        r3c10.send_keys("r3c10")
+
+        # fill r3c11
+        r3c11 = browser.find_element_by_name("r3c11")
+        r3c11.clear()
+        r3c11.send_keys("r3c11")
+
+        # fill r3c12
+        r3c12 = browser.find_element_by_name("r3c12")
+        r3c12.clear()
+        r3c12.send_keys("r3c12")
+
+        # fill r4c1
+        r4c1 = browser.find_element_by_name("r4c1")
+        r4c1.clear()
+        r4c1.send_keys("r4c1")
+
+        # fill r4c2
+        r4c2 = browser.find_element_by_name("r4c2")
+        r4c2.clear()
+        r4c2.send_keys("r4c2")
+
+        # fill r4c3
+        r4c3 = browser.find_element_by_name("r4c3")
+        r4c3.clear()
+        r4c3.send_keys("r4c3")
+
+        # fill r4c4
+        r4c4 = browser.find_element_by_name("r4c4")
+        r4c4.clear()
+        r4c4.send_keys("r4c4")
+
+        # fill r4c5
+        r4c5 = browser.find_element_by_name("r4c5")
+        r4c5.clear()
+        r4c5.send_keys("r4c5")
+
+        # fill r4c6
+        r4c6 = browser.find_element_by_name("r4c6")
+        r4c6.clear()
+        r4c6.send_keys("r4c6")
+
+        # fill r4c7
+        r4c7 = browser.find_element_by_name("r4c7")
+        r4c7.clear()
+        r4c7.send_keys("r4c7")
+
+        # fill r4c8
+        r4c8 = browser.find_element_by_name("r4c8")
+        r4c8.clear()
+        r4c8.send_keys("r4c8")
+
+        # fill r4c9
+        r4c9 = browser.find_element_by_name("r4c9")
+        r4c9.clear()
+        r4c9.send_keys("r4c9")
+
+        # fill r4c10
+        r4c10 = browser.find_element_by_name("r4c10")
+        r4c10.clear()
+        r4c10.send_keys("r4c10")
+
+        # fill r4c11
+        r4c11 = browser.find_element_by_name("r4c11")
+        r4c11.clear()
+        r4c11.send_keys("r4c11")
+
+        # fill r4c12
+        r4c12 = browser.find_element_by_name("r4c12")
+        r4c12.clear()
+        r4c12.send_keys("r4c12")
+
+        # fill r5c1
+        r5c1 = browser.find_element_by_name("r5c1")
+        r5c1.clear()
+        r5c1.send_keys("r5c1")
+
+        # fill r5c2
+        r5c2 = browser.find_element_by_name("r5c2")
+        r5c2.clear()
+        r5c2.send_keys("r5c2")
+
+        # fill r5c3
+        r5c3 = browser.find_element_by_name("r5c3")
+        r5c3.clear()
+        r5c3.send_keys("r5c3")
+
+        # fill r5c4
+        r5c4 = browser.find_element_by_name("r5c4")
+        r5c4.clear()
+        r5c4.send_keys("r5c4")
+
+        # fill r5c5
+        r5c5 = browser.find_element_by_name("r5c5")
+        r5c5.clear()
+        r5c5.send_keys("r5c5")
+
+        # fill r5c6
+        r5c6 = browser.find_element_by_name("r5c6")
+        r5c6.clear()
+        r5c6.send_keys("r5c6")
+
+        # fill r5c7
+        r5c7 = browser.find_element_by_name("r5c7")
+        r5c7.clear()
+        r5c7.send_keys("r5c7")
+
+        # fill r5c8
+        r5c8 = browser.find_element_by_name("r5c8")
+        r5c8.clear()
+        r5c8.send_keys("r5c8")
+
+        # fill r5c9
+        r5c9 = browser.find_element_by_name("r5c9")
+        r5c9.clear()
+        r5c9.send_keys("r5c9")
+
+        # fill r5c10
+        r5c10 = browser.find_element_by_name("r5c10")
+        r5c10.clear()
+        r5c10.send_keys("r5c10")
+
+        # fill r5c11
+        r5c11 = browser.find_element_by_name("r5c11")
+        r5c11.clear()
+        r5c11.send_keys("r5c11")
+
+        # fill r5c12
+        r5c12 = browser.find_element_by_name("r5c12")
+        r5c12.clear()
+        r5c12.send_keys("r5c12")
+
+        # fill r6c1
+        r6c1 = browser.find_element_by_name("r6c1")
+        r6c1.clear()
+        r6c1.send_keys("r6c1")
+
+        # fill r6c2
+        r6c2 = browser.find_element_by_name("r6c2")
+        r6c2.clear()
+        r6c2.send_keys("r6c2")
+
+        # fill r6c3
+        r6c3 = browser.find_element_by_name("r6c3")
+        r6c3.clear()
+        r6c3.send_keys("r6c3")
+
+        # fill r6c4
+        r6c4 = browser.find_element_by_name("r6c4")
+        r6c4.clear()
+        r6c4.send_keys("r6c4")
+
+        # fill r6c5
+        r6c5 = browser.find_element_by_name("r6c5")
+        r6c5.clear()
+        r6c5.send_keys("r6c5")
+
+        # fill r6c6
+        r6c6 = browser.find_element_by_name("r6c6")
+        r6c6.clear()
+        r6c6.send_keys("r6c6")
+
+        # fill r6c7
+        r6c7 = browser.find_element_by_name("r6c7")
+        r6c7.clear()
+        r6c7.send_keys("r6c7")
+
+        # fill r6c8
+        r6c8 = browser.find_element_by_name("r6c8")
+        r6c8.clear()
+        r6c8.send_keys("r6c8")
+
+        # fill r6c9
+        r6c9 = browser.find_element_by_name("r6c9")
+        r6c9.clear()
+        r6c9.send_keys("r6c9")
+
+        # fill r6c10
+        r6c10 = browser.find_element_by_name("r6c10")
+        r6c10.clear()
+        r6c10.send_keys("r6c10")
+
+        # fill r6c11
+        r6c11 = browser.find_element_by_name("r6c11")
+        r6c11.clear()
+        r6c11.send_keys("r6c11")
+
+        # fill r6c12
+        r6c12 = browser.find_element_by_name("r6c12")
+        r6c12.clear()
+        r6c12.send_keys("r6c12")
+
+        # fill r7c1
+        r7c1 = browser.find_element_by_name("r7c1")
+        r7c1.clear()
+        r7c1.send_keys("r7c1")
+
+        # fill r7c2
+        r7c2 = browser.find_element_by_name("r7c2")
+        r7c2.clear()
+        r7c2.send_keys("r7c2")
+
+        # fill r7c3
+        r7c3 = browser.find_element_by_name("r7c3")
+        r7c3.clear()
+        r7c3.send_keys("r7c3")
+
+        # fill r7c4
+        r7c4 = browser.find_element_by_name("r7c4")
+        r7c4.clear()
+        r7c4.send_keys("r7c4")
+
+        # fill r7c5
+        r7c5 = browser.find_element_by_name("r7c5")
+        r7c5.clear()
+        r7c5.send_keys("r7c5")
+
+        # fill r7c6
+        r7c6 = browser.find_element_by_name("r7c6")
+        r7c6.clear()
+        r7c6.send_keys("r7c6")
+
+        # fill r7c7
+        r7c7 = browser.find_element_by_name("r7c7")
+        r7c7.clear()
+        r7c7.send_keys("r7c7")
+
+        # fill r7c8
+        r7c8 = browser.find_element_by_name("r7c8")
+        r7c8.clear()
+        r7c8.send_keys("r7c8")
+
+        # fill r7c9
+        r7c9 = browser.find_element_by_name("r7c9")
+        r7c9.clear()
+        r7c9.send_keys("r7c9")
+
+        # fill r7c10
+        r7c10 = browser.find_element_by_name("r7c10")
+        r7c10.clear()
+        r7c10.send_keys("r7c10")
+
+        # fill r7c11
+        r7c11 = browser.find_element_by_name("r7c11")
+        r7c11.clear()
+        r7c11.send_keys("r7c11")
+
+        # fill r7c12
+        r7c12 = browser.find_element_by_name("r7c12")
+        r7c12.clear()
+        r7c12.send_keys("r7c12")
+
+        # fill r8c1
+        r8c1 = browser.find_element_by_name("r8c1")
+        r8c1.clear()
+        r8c1.send_keys("r8c1")
+
+        # fill r8c2
+        r8c2 = browser.find_element_by_name("r8c2")
+        r8c2.clear()
+        r8c2.send_keys("r8c2")
+
+        # fill r8c3
+        r8c3 = browser.find_element_by_name("r8c3")
+        r8c3.clear()
+        r8c3.send_keys("r8c3")
+
+        # fill r8c4
+        r8c4 = browser.find_element_by_name("r8c4")
+        r8c4.clear()
+        r8c4.send_keys("r8c4")
+
+        # fill r8c5
+        r8c5 = browser.find_element_by_name("r8c5")
+        r8c5.clear()
+        r8c5.send_keys("r8c5")
+
+        # fill r8c6
+        r8c6 = browser.find_element_by_name("r8c6")
+        r8c6.clear()
+        r8c6.send_keys("r8c6")
+
+        # fill r8c7
+        r8c7 = browser.find_element_by_name("r8c7")
+        r8c7.clear()
+        r8c7.send_keys("r8c7")
+
+        # fill r8c8
+        r8c8 = browser.find_element_by_name("r8c8")
+        r8c8.clear()
+        r8c8.send_keys("r8c8")
+
+        # fill r8c9
+        r8c9 = browser.find_element_by_name("r8c9")
+        r8c9.clear()
+        r8c9.send_keys("r8c9")
+
+        # fill r8c10
+        r8c10 = browser.find_element_by_name("r8c10")
+        r8c10.clear()
+        r8c10.send_keys("r8c10")
+
+        # fill r8c11
+        r8c11 = browser.find_element_by_name("r8c11")
+        r8c11.clear()
+        r8c11.send_keys("r8c11")
+
+        # fill r8c12
+        r8c12 = browser.find_element_by_name("r8c12")
+        r8c12.clear()
+        r8c12.send_keys("r8c12")
+
+        # fill r9c1
+        r9c1 = browser.find_element_by_name("r9c1")
+        r9c1.clear()
+        r9c1.send_keys("r9c1")
+
+        # fill r9c2
+        r9c2 = browser.find_element_by_name("r9c2")
+        r9c2.clear()
+        r9c2.send_keys("r9c2")
+
+        # fill r9c3
+        r9c3 = browser.find_element_by_name("r9c3")
+        r9c3.clear()
+        r9c3.send_keys("r9c3")
+
+        # fill r9c4
+        r9c4 = browser.find_element_by_name("r9c4")
+        r9c4.clear()
+        r9c4.send_keys("r9c4")
+
+        # fill r9c5
+        r9c5 = browser.find_element_by_name("r9c5")
+        r9c5.clear()
+        r9c5.send_keys("r9c5")
+
+        # fill r9c6
+        r9c6 = browser.find_element_by_name("r9c6")
+        r9c6.clear()
+        r9c6.send_keys("r9c6")
+
+        # fill r9c7
+        r9c7 = browser.find_element_by_name("r9c7")
+        r9c7.clear()
+        r9c7.send_keys("r9c7")
+
+        # fill r9c8
+        r9c8 = browser.find_element_by_name("r9c8")
+        r9c8.clear()
+        r9c8.send_keys("r9c8")
+
+        # fill r9c9
+        r9c9 = browser.find_element_by_name("r9c9")
+        r9c9.clear()
+        r9c9.send_keys("r9c9")
+
+        # fill r9c10
+        r9c10 = browser.find_element_by_name("r9c10")
+        r9c10.clear()
+        r9c10.send_keys("r9c10")
+
+        # fill r9c11
+        r9c11 = browser.find_element_by_name("r9c11")
+        r9c11.clear()
+        r9c11.send_keys("r9c11")
+
+        # fill r9c12
+        r9c12 = browser.find_element_by_name("r9c12")
+        r9c12.clear()
+        r9c12.send_keys("r9c12")
+
+        # fill r10c1
+        r10c1 = browser.find_element_by_name("r10c1")
+        r10c1.clear()
+        r10c1.send_keys("r10c1")
+
+        # fill r10c2
+        r10c2 = browser.find_element_by_name("r10c2")
+        r10c2.clear()
+        r10c2.send_keys("r10c2")
+
+        # fill r10c3
+        r10c3 = browser.find_element_by_name("r10c3")
+        r10c3.clear()
+        r10c3.send_keys("r10c3")
+
+        # fill r10c4
+        r10c4 = browser.find_element_by_name("r10c4")
+        r10c4.clear()
+        r10c4.send_keys("r10c4")
+
+        # fill r10c5
+        r10c5 = browser.find_element_by_name("r10c5")
+        r10c5.clear()
+        r10c5.send_keys("r10c5")
+
+        # fill r10c6
+        r10c6 = browser.find_element_by_name("r10c6")
+        r10c6.clear()
+        r10c6.send_keys("r10c6")
+
+        # fill r10c7
+        r10c7 = browser.find_element_by_name("r10c7")
+        r10c7.clear()
+        r10c7.send_keys("r10c7")
+
+        # fill r10c8
+        r10c8 = browser.find_element_by_name("r10c8")
+        r10c8.clear()
+        r10c8.send_keys("r10c8")
+
+        # fill r10c9
+        r10c9 = browser.find_element_by_name("r10c9")
+        r10c9.clear()
+        r10c9.send_keys("r10c9")
+
+        # fill r10c10
+        r10c10 = browser.find_element_by_name("r10c10")
+        r10c10.clear()
+        r10c10.send_keys("r10c10")
+
+        # fill r10c11
+        r10c11 = browser.find_element_by_name("r10c11")
+        r10c11.clear()
+        r10c11.send_keys("r10c11")
+
+        # fill r10c12
+        r10c12 = browser.find_element_by_name("r10c12")
+        r10c12.clear()
+        r10c12.send_keys("r10c12")
+
+        # fill r11c1
+        r11c1 = browser.find_element_by_name("r11c1")
+        r11c1.clear()
+        r11c1.send_keys("r11c1")
+
+        # fill r11c2
+        r11c2 = browser.find_element_by_name("r11c2")
+        r11c2.clear()
+        r11c2.send_keys("r11c2")
+
+        # fill r11c3
+        r11c3 = browser.find_element_by_name("r11c3")
+        r11c3.clear()
+        r11c3.send_keys("r11c3")
+
+        # fill r11c4
+        r11c4 = browser.find_element_by_name("r11c4")
+        r11c4.clear()
+        r11c4.send_keys("r11c4")
+
+        # fill r11c5
+        r11c5 = browser.find_element_by_name("r11c5")
+        r11c5.clear()
+        r11c5.send_keys("r11c5")
+
+        # fill r11c6
+        r11c6 = browser.find_element_by_name("r11c6")
+        r11c6.clear()
+        r11c6.send_keys("r11c6")
+
+        # fill r11c7
+        r11c7 = browser.find_element_by_name("r11c7")
+        r11c7.clear()
+        r11c7.send_keys("r11c7")
+
+        # fill r11c8
+        r11c8 = browser.find_element_by_name("r11c8")
+        r11c8.clear()
+        r11c8.send_keys("r11c8")
+
+        # fill r11c9
+        r11c9 = browser.find_element_by_name("r11c9")
+        r11c9.clear()
+        r11c9.send_keys("r11c9")
+
+        # fill r11c10
+        r11c10 = browser.find_element_by_name("r11c10")
+        r11c10.clear()
+        r11c10.send_keys("r11c10")
+
+        # fill r11c11
+        r11c11 = browser.find_element_by_name("r11c11")
+        r11c11.clear()
+        r11c11.send_keys("r11c11")
+
+        # fill r11c12
+        r11c12 = browser.find_element_by_name("r11c12")
+        r11c12.clear()
+        r11c12.send_keys("r11c12")
+
+        # fill r12c1
+        r12c1 = browser.find_element_by_name("r12c1")
+        r12c1.clear()
+        r12c1.send_keys("r12c1")
+
+        # fill r12c2
+        r12c2 = browser.find_element_by_name("r12c2")
+        r12c2.clear()
+        r12c2.send_keys("r12c2")
+
+        # fill r12c3
+        r12c3 = browser.find_element_by_name("r12c3")
+        r12c3.clear()
+        r12c3.send_keys("r12c3")
+
+        # fill r12c4
+        r12c4 = browser.find_element_by_name("r12c4")
+        r12c4.clear()
+        r12c4.send_keys("r12c4")
+
+        # fill r12c5
+        r12c5 = browser.find_element_by_name("r12c5")
+        r12c5.clear()
+        r12c5.send_keys("r12c5")
+
+        # fill r12c6
+        r12c6 = browser.find_element_by_name("r12c6")
+        r12c6.clear()
+        r12c6.send_keys("r12c6")
+
+        # fill r12c7
+        r12c7 = browser.find_element_by_name("r12c7")
+        r12c7.clear()
+        r12c7.send_keys("r12c7")
+
+        # fill r12c8
+        r12c8 = browser.find_element_by_name("r12c8")
+        r12c8.clear()
+        r12c8.send_keys("r12c8")
+
+        # fill r12c9
+        r12c9 = browser.find_element_by_name("r12c9")
+        r12c9.clear()
+        r12c9.send_keys("r12c9")
+
+        # fill r12c10
+        r12c10 = browser.find_element_by_name("r12c10")
+        r12c10.clear()
+        r12c10.send_keys("r12c10")
+
+        # fill r12c11
+        r12c11 = browser.find_element_by_name("r12c11")
+        r12c11.clear()
+        r12c11.send_keys("r12c11")
+
+        # fill r12c12
+        r12c12 = browser.find_element_by_name("r12c12")
+        r12c12.clear()
+        r12c12.send_keys("r12c12")
+
+        # fill r13c1
+        r13c1 = browser.find_element_by_name("r13c1")
+        r13c1.clear()
+        r13c1.send_keys("r13c1")
+
+        # fill r13c2
+        r13c2 = browser.find_element_by_name("r13c2")
+        r13c2.clear()
+        r13c2.send_keys("r13c2")
+
+        # fill r13c3
+        r13c3 = browser.find_element_by_name("r13c3")
+        r13c3.clear()
+        r13c3.send_keys("r13c3")
+
+        # fill r13c4
+        r13c4 = browser.find_element_by_name("r13c4")
+        r13c4.clear()
+        r13c4.send_keys("r13c4")
+
+        # fill r13c5
+        r13c5 = browser.find_element_by_name("r13c5")
+        r13c5.clear()
+        r13c5.send_keys("r13c5")
+
+        # fill r13c6
+        r13c6 = browser.find_element_by_name("r13c6")
+        r13c6.clear()
+        r13c6.send_keys("r13c6")
+
+        # fill r13c7
+        r13c7 = browser.find_element_by_name("r13c7")
+        r13c7.clear()
+        r13c7.send_keys("r13c7")
+
+        # fill r13c8
+        r13c8 = browser.find_element_by_name("r13c8")
+        r13c8.clear()
+        r13c8.send_keys("r13c8")
+
+        # fill r13c9
+        r13c9 = browser.find_element_by_name("r13c9")
+        r13c9.clear()
+        r13c9.send_keys("r13c9")
+
+        # fill r13c10
+        r13c10 = browser.find_element_by_name("r13c10")
+        r13c10.clear()
+        r13c10.send_keys("r13c10")
+
+        # fill r13c11
+        r13c11 = browser.find_element_by_name("r13c11")
+        r13c11.clear()
+        r13c11.send_keys("r13c11")
+
+        # fill r13c12
+        r13c12 = browser.find_element_by_name("r13c12")
+        r13c12.clear()
+        r13c12.send_keys("r13c12")
+
+        # fill r14c1
+        r14c1 = browser.find_element_by_name("r14c1")
+        r14c1.clear()
+        r14c1.send_keys("r14c1")
+
+        # fill r14c2
+        r14c2 = browser.find_element_by_name("r14c2")
+        r14c2.clear()
+        r14c2.send_keys("r14c2")
+
+        # fill r14c3
+        r14c3 = browser.find_element_by_name("r14c3")
+        r14c3.clear()
+        r14c3.send_keys("r14c3")
+
+        # fill r14c4
+        r14c4 = browser.find_element_by_name("r14c4")
+        r14c4.clear()
+        r14c4.send_keys("r14c4")
+
+        # fill r14c5
+        r14c5 = browser.find_element_by_name("r14c5")
+        r14c5.clear()
+        r14c5.send_keys("r14c5")
+
+        # fill r14c6
+        r14c6 = browser.find_element_by_name("r14c6")
+        r14c6.clear()
+        r14c6.send_keys("r14c6")
+
+        # fill r14c7
+        r14c7 = browser.find_element_by_name("r14c7")
+        r14c7.clear()
+        r14c7.send_keys("r14c7")
+
+        # fill r14c8
+        r14c8 = browser.find_element_by_name("r14c8")
+        r14c8.clear()
+        r14c8.send_keys("r14c8")
+
+        # fill r14c9
+        r14c9 = browser.find_element_by_name("r14c9")
+        r14c9.clear()
+        r14c9.send_keys("r14c9")
+
+        # fill r14c10
+        r14c10 = browser.find_element_by_name("r14c10")
+        r14c10.clear()
+        r14c10.send_keys("r14c10")
+
+        # fill r14c11
+        r14c11 = browser.find_element_by_name("r14c11")
+        r14c11.clear()
+        r14c11.send_keys("r14c11")
+
+        # fill r14c12
+        r14c12 = browser.find_element_by_name("r14c12")
+        r14c12.clear()
+        r14c12.send_keys("r14c12")
+
+        # fill r15c1
+        r15c1 = browser.find_element_by_name("r15c1")
+        r15c1.clear()
+        r15c1.send_keys("r15c1")
+
+        # fill r15c2
+        r15c2 = browser.find_element_by_name("r15c2")
+        r15c2.clear()
+        r15c2.send_keys("r15c2")
+
+        # fill r15c3
+        r15c3 = browser.find_element_by_name("r15c3")
+        r15c3.clear()
+        r15c3.send_keys("r15c3")
+
+        # fill r15c4
+        r15c4 = browser.find_element_by_name("r15c4")
+        r15c4.clear()
+        r15c4.send_keys("r15c4")
+
+        # fill r15c5
+        r15c5 = browser.find_element_by_name("r15c5")
+        r15c5.clear()
+        r15c5.send_keys("r15c5")
+
+        # fill r15c6
+        r15c6 = browser.find_element_by_name("r15c6")
+        r15c6.clear()
+        r15c6.send_keys("r15c6")
+
+        # fill r15c7
+        r15c7 = browser.find_element_by_name("r15c7")
+        r15c7.clear()
+        r15c7.send_keys("r15c7")
+
+        # fill r15c8
+        r15c8 = browser.find_element_by_name("r15c8")
+        r15c8.clear()
+        r15c8.send_keys("r15c8")
+
+        # fill r15c9
+        r15c9 = browser.find_element_by_name("r15c9")
+        r15c9.clear()
+        r15c9.send_keys("r15c9")
+
+        # fill r15c10
+        r15c10 = browser.find_element_by_name("r15c10")
+        r15c10.clear()
+        r15c10.send_keys("r15c10")
+
+        # fill r15c11
+        r15c11 = browser.find_element_by_name("r15c11")
+        r15c11.clear()
+        r15c11.send_keys("r15c11")
+
+        # fill r15c12
+        r15c12 = browser.find_element_by_name("r15c12")
+        r15c12.clear()
+        r15c12.send_keys("r15c12")
+
+        # fill r16c1
+        r16c1 = browser.find_element_by_name("r16c1")
+        r16c1.clear()
+        r16c1.send_keys("r16c1")
+
+        # fill r16c2
+        r16c2 = browser.find_element_by_name("r16c2")
+        r16c2.clear()
+        r16c2.send_keys("r16c2")
+
+        # fill r16c3
+        r16c3 = browser.find_element_by_name("r16c3")
+        r16c3.clear()
+        r16c3.send_keys("r16c3")
+
+        # fill r16c4
+        r16c4 = browser.find_element_by_name("r16c4")
+        r16c4.clear()
+        r16c4.send_keys("r16c4")
+
+        # fill r16c5
+        r16c5 = browser.find_element_by_name("r16c5")
+        r16c5.clear()
+        r16c5.send_keys("r16c5")
+
+        # fill r16c6
+        r16c6 = browser.find_element_by_name("r16c6")
+        r16c6.clear()
+        r16c6.send_keys("r16c6")
+
+        # fill r16c7
+        r16c7 = browser.find_element_by_name("r16c7")
+        r16c7.clear()
+        r16c7.send_keys("r16c7")
+
+        # fill r16c8
+        r16c8 = browser.find_element_by_name("r16c8")
+        r16c8.clear()
+        r16c8.send_keys("r16c8")
+
+        # fill r16c9
+        r16c9 = browser.find_element_by_name("r16c9")
+        r16c9.clear()
+        r16c9.send_keys("r16c9")
+
+        # fill r16c10
+        r16c10 = browser.find_element_by_name("r16c10")
+        r16c10.clear()
+        r16c10.send_keys("r16c10")
+
+        # fill r16c11
+        r16c11 = browser.find_element_by_name("r16c11")
+        r16c11.clear()
+        r16c11.send_keys("r16c11")
+
+        # fill r16c12
+        r16c12 = browser.find_element_by_name("r16c12")
+        r16c12.clear()
+        r16c12.send_keys("r16c12")
+
+        # fill r17c1
+        r17c1 = browser.find_element_by_name("r17c1")
+        r17c1.clear()
+        r17c1.send_keys("r17c1")
+
+        # fill r17c2
+        r17c2 = browser.find_element_by_name("r17c2")
+        r17c2.clear()
+        r17c2.send_keys("r17c2")
+
+        # fill r17c3
+        r17c3 = browser.find_element_by_name("r17c3")
+        r17c3.clear()
+        r17c3.send_keys("r17c3")
+
+        # fill r17c4
+        r17c4 = browser.find_element_by_name("r17c4")
+        r17c4.clear()
+        r17c4.send_keys("r17c4")
+
+        # fill r17c5
+        r17c5 = browser.find_element_by_name("r17c5")
+        r17c5.clear()
+        r17c5.send_keys("r17c5")
+
+        # fill r17c6
+        r17c6 = browser.find_element_by_name("r17c6")
+        r17c6.clear()
+        r17c6.send_keys("r17c6")
+
+        # fill r17c7
+        r17c7 = browser.find_element_by_name("r17c7")
+        r17c7.clear()
+        r17c7.send_keys("r17c7")
+
+        # fill r17c8
+        r17c8 = browser.find_element_by_name("r17c8")
+        r17c8.clear()
+        r17c8.send_keys("r17c8")
+
+        # fill r17c9
+        r17c9 = browser.find_element_by_name("r17c9")
+        r17c9.clear()
+        r17c9.send_keys("r17c9")
+
+        # fill r17c10
+        r17c10 = browser.find_element_by_name("r17c10")
+        r17c10.clear()
+        r17c10.send_keys("r17c10")
+
+        # fill r17c11
+        r17c11 = browser.find_element_by_name("r17c11")
+        r17c11.clear()
+        r17c11.send_keys("r17c11")
+
+        # fill r17c12
+        r17c12 = browser.find_element_by_name("r17c12")
+        r17c12.clear()
+        r17c12.send_keys("r17c12")
+
+        # fill r18c1
+        r18c1 = browser.find_element_by_name("r18c1")
+        r18c1.clear()
+        r18c1.send_keys("r18c1")
+
+        # fill r18c2
+        r18c2 = browser.find_element_by_name("r18c2")
+        r18c2.clear()
+        r18c2.send_keys("r18c2")
+
+        # fill r18c3
+        r18c3 = browser.find_element_by_name("r18c3")
+        r18c3.clear()
+        r18c3.send_keys("r18c3")
+
+        # fill r18c4
+        r18c4 = browser.find_element_by_name("r18c4")
+        r18c4.clear()
+        r18c4.send_keys("r18c4")
+
+        # fill r18c5
+        r18c5 = browser.find_element_by_name("r18c5")
+        r18c5.clear()
+        r18c5.send_keys("r18c5")
+
+        # fill r18c6
+        r18c6 = browser.find_element_by_name("r18c6")
+        r18c6.clear()
+        r18c6.send_keys("r18c6")
+
+        # fill r18c7
+        r18c7 = browser.find_element_by_name("r18c7")
+        r18c7.clear()
+        r18c7.send_keys("r18c7")
+
+        # fill r18c8
+        r18c8 = browser.find_element_by_name("r18c8")
+        r18c8.clear()
+        r18c8.send_keys("r18c8")
+
+        # fill r18c9
+        r18c9 = browser.find_element_by_name("r18c9")
+        r18c9.clear()
+        r18c9.send_keys("r18c9")
+
+        # fill r18c10
+        r18c10 = browser.find_element_by_name("r18c10")
+        r18c10.clear()
+        r18c10.send_keys("r18c10")
+
+        # fill r18c11
+        r18c11 = browser.find_element_by_name("r18c11")
+        r18c11.clear()
+        r18c11.send_keys("r18c11")
+
+        # fill r18c12
+        r18c12 = browser.find_element_by_name("r18c12")
+        r18c12.clear()
+        r18c12.send_keys("r18c12")
+
+        # fill r19c1
+        r19c1 = browser.find_element_by_name("r19c1")
+        r19c1.clear()
+        r19c1.send_keys("r19c1")
+
+        # fill r19c2
+        r19c2 = browser.find_element_by_name("r19c2")
+        r19c2.clear()
+        r19c2.send_keys("r19c2")
+
+        # fill r19c3
+        r19c3 = browser.find_element_by_name("r19c3")
+        r19c3.clear()
+        r19c3.send_keys("r19c3")
+
+        # fill r19c4
+        r19c4 = browser.find_element_by_name("r19c4")
+        r19c4.clear()
+        r19c4.send_keys("r19c4")
+
+        # fill r19c5
+        r19c5 = browser.find_element_by_name("r19c5")
+        r19c5.clear()
+        r19c5.send_keys("r19c5")
+
+        # fill r19c6
+        r19c6 = browser.find_element_by_name("r19c6")
+        r19c6.clear()
+        r19c6.send_keys("r19c6")
+
+        # fill r19c7
+        r19c7 = browser.find_element_by_name("r19c7")
+        r19c7.clear()
+        r19c7.send_keys("r19c7")
+
+        # fill r19c8
+        r19c8 = browser.find_element_by_name("r19c8")
+        r19c8.clear()
+        r19c8.send_keys("r19c8")
+
+        # fill r19c9
+        r19c9 = browser.find_element_by_name("r19c9")
+        r19c9.clear()
+        r19c9.send_keys("r19c9")
+
+        # fill r19c10
+        r19c10 = browser.find_element_by_name("r19c10")
+        r19c10.clear()
+        r19c10.send_keys("r19c10")
+
+        # fill r19c11
+        r19c11 = browser.find_element_by_name("r19c11")
+        r19c11.clear()
+        r19c11.send_keys("r19c11")
+
+        # fill r19c12
+        r19c12 = browser.find_element_by_name("r19c12")
+        r19c12.clear()
+        r19c12.send_keys("r19c12")
+
+        # fill r20c1
+        r20c1 = browser.find_element_by_name("r20c1")
+        r20c1.clear()
+        r20c1.send_keys("r20c1")
+
+        # fill r20c2
+        r20c2 = browser.find_element_by_name("r20c2")
+        r20c2.clear()
+        r20c2.send_keys("r20c2")
+
+        # fill r20c3
+        r20c3 = browser.find_element_by_name("r20c3")
+        r20c3.clear()
+        r20c3.send_keys("r20c3")
+
+        # fill r20c4
+        r20c4 = browser.find_element_by_name("r20c4")
+        r20c4.clear()
+        r20c4.send_keys("r20c4")
+
+        # fill r20c5
+        r20c5 = browser.find_element_by_name("r20c5")
+        r20c5.clear()
+        r20c5.send_keys("r20c5")
+
+        # fill r20c6
+        r20c6 = browser.find_element_by_name("r20c6")
+        r20c6.clear()
+        r20c6.send_keys("r20c6")
+
+        # fill r20c7
+        r20c7 = browser.find_element_by_name("r20c7")
+        r20c7.clear()
+        r20c7.send_keys("r20c7")
+
+        # fill r20c8
+        r20c8 = browser.find_element_by_name("r20c8")
+        r20c8.clear()
+        r20c8.send_keys("r20c8")
+
+        # fill r20c9
+        r20c9 = browser.find_element_by_name("r20c9")
+        r20c9.clear()
+        r20c9.send_keys("r20c9")
+
+        # fill r20c10
+        r20c10 = browser.find_element_by_name("r20c10")
+        r20c10.clear()
+        r20c10.send_keys("r20c10")
+
+        # fill r20c11
+        r20c11 = browser.find_element_by_name("r20c11")
+        r20c11.clear()
+        r20c11.send_keys("r20c11")
+
+        # fill r20c12
+        r20c12 = browser.find_element_by_name("r20c12")
+        r20c12.clear()
+        r20c12.send_keys("r20c12")
+
+        # fill r21c1
+        r21c1 = browser.find_element_by_name("r21c1")
+        r21c1.clear()
+        r21c1.send_keys("r21c1")
+
+        # fill r21c2
+        r21c2 = browser.find_element_by_name("r21c2")
+        r21c2.clear()
+        r21c2.send_keys("r21c2")
+
+        # fill r21c3
+        r21c3 = browser.find_element_by_name("r21c3")
+        r21c3.clear()
+        r21c3.send_keys("r21c3")
+
+        # fill r21c4
+        r21c4 = browser.find_element_by_name("r21c4")
+        r21c4.clear()
+        r21c4.send_keys("r21c4")
+
+        # fill r21c5
+        r21c5 = browser.find_element_by_name("r21c5")
+        r21c5.clear()
+        r21c5.send_keys("r21c5")
+
+        # fill r21c6
+        r21c6 = browser.find_element_by_name("r21c6")
+        r21c6.clear()
+        r21c6.send_keys("r21c6")
+
+        # fill r21c7
+        r21c7 = browser.find_element_by_name("r21c7")
+        r21c7.clear()
+        r21c7.send_keys("r21c7")
+
+        # fill r21c8
+        r21c8 = browser.find_element_by_name("r21c8")
+        r21c8.clear()
+        r21c8.send_keys("r21c8")
+
+        # fill r21c9
+        r21c9 = browser.find_element_by_name("r21c9")
+        r21c9.clear()
+        r21c9.send_keys("r21c9")
+
+        # fill r21c10
+        r21c10 = browser.find_element_by_name("r21c10")
+        r21c10.clear()
+        r21c10.send_keys("r21c10")
+
+        # fill r21c11
+        r21c11 = browser.find_element_by_name("r21c11")
+        r21c11.clear()
+        r21c11.send_keys("r21c11")
+
+        # fill r21c12
+        r21c12 = browser.find_element_by_name("r21c12")
+        r21c12.clear()
+        r21c12.send_keys("r21c12")
+
+        # fill r22c1
+        r22c1 = browser.find_element_by_name("r22c1")
+        r22c1.clear()
+        r22c1.send_keys("r22c1")
+
+        # fill r22c2
+        r22c2 = browser.find_element_by_name("r22c2")
+        r22c2.clear()
+        r22c2.send_keys("r22c2")
+
+        # fill r22c3
+        r22c3 = browser.find_element_by_name("r22c3")
+        r22c3.clear()
+        r22c3.send_keys("r22c3")
+
+        # fill r22c4
+        r22c4 = browser.find_element_by_name("r22c4")
+        r22c4.clear()
+        r22c4.send_keys("r22c4")
+
+        # fill r22c5
+        r22c5 = browser.find_element_by_name("r22c5")
+        r22c5.clear()
+        r22c5.send_keys("r22c5")
+
+        # fill r22c6
+        r22c6 = browser.find_element_by_name("r22c6")
+        r22c6.clear()
+        r22c6.send_keys("r22c6")
+
+        # fill r22c7
+        r22c7 = browser.find_element_by_name("r22c7")
+        r22c7.clear()
+        r22c7.send_keys("r22c7")
+
+        # fill r22c8
+        r22c8 = browser.find_element_by_name("r22c8")
+        r22c8.clear()
+        r22c8.send_keys("r22c8")
+
+        # fill r22c9
+        r22c9 = browser.find_element_by_name("r22c9")
+        r22c9.clear()
+        r22c9.send_keys("r22c9")
+
+        # fill r22c10
+        r22c10 = browser.find_element_by_name("r22c10")
+        r22c10.clear()
+        r22c10.send_keys("r22c10")
+
+        # fill r22c11
+        r22c11 = browser.find_element_by_name("r22c11")
+        r22c11.clear()
+        r22c11.send_keys("r22c11")
+
+        # fill r22c12
+        r22c12 = browser.find_element_by_name("r22c12")
+        r22c12.clear()
+        r22c12.send_keys("r22c12")
+
+        # fill r23c1
+        r23c1 = browser.find_element_by_name("r23c1")
+        r23c1.clear()
+        r23c1.send_keys("r23c1")
+
+        # fill r23c2
+        r23c2 = browser.find_element_by_name("r23c2")
+        r23c2.clear()
+        r23c2.send_keys("r23c2")
+
+        # fill r23c3
+        r23c3 = browser.find_element_by_name("r23c3")
+        r23c3.clear()
+        r23c3.send_keys("r23c3")
+
+        # fill r23c4
+        r23c4 = browser.find_element_by_name("r23c4")
+        r23c4.clear()
+        r23c4.send_keys("r23c4")
+
+        # fill r23c5
+        r23c5 = browser.find_element_by_name("r23c5")
+        r23c5.clear()
+        r23c5.send_keys("r23c5")
+
+        # fill r23c6
+        r23c6 = browser.find_element_by_name("r23c6")
+        r23c6.clear()
+        r23c6.send_keys("r23c6")
+
+        # fill r23c7
+        r23c7 = browser.find_element_by_name("r23c7")
+        r23c7.clear()
+        r23c7.send_keys("r23c7")
+
+        # fill r23c8
+        r23c8 = browser.find_element_by_name("r23c8")
+        r23c8.clear()
+        r23c8.send_keys("r23c8")
+
+        # fill r23c9
+        r23c9 = browser.find_element_by_name("r23c9")
+        r23c9.clear()
+        r23c9.send_keys("r23c9")
+
+        # fill r23c10
+        r23c10 = browser.find_element_by_name("r23c10")
+        r23c10.clear()
+        r23c10.send_keys("r23c10")
+
+        # fill r23c11
+        r23c11 = browser.find_element_by_name("r23c11")
+        r23c11.clear()
+        r23c11.send_keys("r23c11")
+
+        # fill r23c12
+        r23c12 = browser.find_element_by_name("r23c12")
+        r23c12.clear()
+        r23c12.send_keys("r23c12")
+
+        # fill r24c1
+        r24c1 = browser.find_element_by_name("r24c1")
+        r24c1.clear()
+        r24c1.send_keys("r24c1")
+
+        # fill r24c2
+        r24c2 = browser.find_element_by_name("r24c2")
+        r24c2.clear()
+        r24c2.send_keys("r24c2")
+
+        # fill r24c3
+        r24c3 = browser.find_element_by_name("r24c3")
+        r24c3.clear()
+        r24c3.send_keys("r24c3")
+
+        # fill r24c4
+        r24c4 = browser.find_element_by_name("r24c4")
+        r24c4.clear()
+        r24c4.send_keys("r24c4")
+
+        # fill r24c5
+        r24c5 = browser.find_element_by_name("r24c5")
+        r24c5.clear()
+        r24c5.send_keys("r24c5")
+
+        # fill r24c6
+        r24c6 = browser.find_element_by_name("r24c6")
+        r24c6.clear()
+        r24c6.send_keys("r24c6")
+
+        # fill r24c7
+        r24c7 = browser.find_element_by_name("r24c7")
+        r24c7.clear()
+        r24c7.send_keys("r24c7")
+
+        # fill r24c8
+        r24c8 = browser.find_element_by_name("r24c8")
+        r24c8.clear()
+        r24c8.send_keys("r24c8")
+
+        # fill r24c9
+        r24c9 = browser.find_element_by_name("r24c9")
+        r24c9.clear()
+        r24c9.send_keys("r24c9")
+
+        # fill r24c10
+        r24c10 = browser.find_element_by_name("r24c10")
+        r24c10.clear()
+        r24c10.send_keys("r24c10")
+
+        # fill r24c11
+        r24c11 = browser.find_element_by_name("r24c11")
+        r24c11.clear()
+        r24c11.send_keys("r24c11")
+
+        # fill r24c12
+        r24c12 = browser.find_element_by_name("r24c12")
+        r24c12.clear()
+        r24c12.send_keys("r24c12")
+
+        # submit
+        submit = browser.find_element_by_name("button_generate_html_to_pdf_promotions_calendar")
+        submit.click()
+
+        time.sleep(5)
+
+        browser.quit()
+
 
 if __name__ == '__main__':
     unittest.main()
